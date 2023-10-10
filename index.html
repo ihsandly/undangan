@@ -1,0 +1,355 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/icon/favicons.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Ana & Budi - The Wedding</title>
+  </head>
+  <body>
+    <!-- play music -->
+    <div class="play-music">
+      <img
+        id="toggle-button"
+        src="assets/icon/play-circle.svg"
+        alt="play-music"
+      />
+      <audio id="music">
+        <source src="assets/music/sampaiJadiDebu.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <!-- play music -->
+
+    <!-- fullscreen intro -->
+    <div id="intro" class="fullscreenComponents">
+      <div class="components">
+        <div class="photo">
+          <img src="assets/ring/wedding-ring.jpg" alt="Wedding Ring" />
+        </div>
+        <div class="teks">
+          <div class="kepada">
+            <p>Kepada Bapak/Ibu/Saudara/i</p>
+          </div>
+          <div class="teks-undangan">
+            <p>
+              Dengan gembira kami mengundang Anda untuk hadir dan merayakan
+              pernikahan kami.
+            </p>
+          </div>
+          <div class="button">
+            <button id="toggleButton" onclick="toggleOpen()">
+              Buka Undangan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fullscreen intro -->
+
+    <nav id="navbar">
+      <div class="title">The Wedding</div>
+      <div class="sub">
+        <a href="#home">Home</a>
+        <a href="#aboutUs">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#weddingdetails">Wedding Details</a>
+      </div>
+    </nav>
+
+    <div class="header" id="home">
+      <div class="container-header">
+        <h1 data-aos="fade-down" data-aos-delay="90" data-aos-duration="1400">
+          Ana & Budi
+        </h1>
+        <p data-aos="fade-down" data-aos-delay="70" data-aos-duration="1000">
+          05 November 2023
+        </p>
+      </div>
+    </div>
+
+    <div class="aboutus" id="aboutUs">
+      <div class="container-aboutus">
+        <div class="aboutus-kiri">
+          <img
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="800"
+            src="assets/img/gallery/couple.jpg"
+            alt="wedding couple"
+          />
+        </div>
+        <div class="aboutus-kanan">
+          <p data-aos="fade-down" data-aos-delay="70" data-aos-duration="1000">
+            ABOUT US
+          </p>
+          <div
+            class="satu"
+            data-aos="fade-left"
+            data-aos-delay="90"
+            data-aos-duration="800"
+          >
+            <h2>Awal Perjumpaan</h2>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+              repellendus sunt asperiores veniam dignissimos minima itaque
+              mollitia deserunt nobis, perferendis provident natus consequatur.
+              Consectetur porro dicta dolores, assumenda autem corporis quia
+              iure pariatur amet saepe veniam libero blanditiis consequatur
+              obcaecati, ratione accusantium quam delectus ab totam quae
+              eligendi eum! Nesciunt.
+            </p>
+          </div>
+
+          <div
+            class="dua"
+            data-aos="fade-left"
+            data-aos-delay="90"
+            data-aos-duration="800"
+          >
+            <h2>Perjalanan cinta</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              numquam doloribus distinctio. Omnis eum ex minus corrupti at eos
+              aliquid dolorum, incidunt non. Dolor, vitae delectus? Nisi ipsa
+              fugiat ea, magni iusto libero harum aliquid. Molestiae facere
+              reiciendis nobis quos.
+            </p>
+          </div>
+
+          <div
+            class="tiga"
+            data-aos="fade-left"
+            data-aos-delay="90"
+            data-aos-duration="800"
+          >
+            <h2>Memantapkan pilihan</h2>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloribus eos assumenda esse reiciendis veniam itaque atque ex?
+              Deserunt sit officia saepe cupiditate assumenda natus odit
+              explicabo. Architecto eius accusamus ipsam natus veniam debitis
+              saepe. Non!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery">
+      <div class="gallery-title">GALLERY</div>
+      <div class="container-gallery">
+        <div class="galleries">
+          <!-- potrait -->
+          <div>
+            <img src="assets/img/gallery/gallery-fix/13.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/10.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/11.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/8.jpg" alt="photo" />
+          </div>
+          <!-- potrait -->
+          <div>
+            <img src="assets/img/gallery/gallery-fix/6.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/2.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/3.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/4.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/7.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/9.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/12.jpg" alt="photo" />
+          </div>
+          <div>
+            <img src="assets/img/gallery/gallery-fix/1.jpg" alt="photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-header" id="weddingdetails">
+      <div class="container-subheader">
+        <div
+          class="kiri"
+          data-aos="fade-right"
+          data-aos-delay="90"
+          data-aos-duration="1000"
+        >
+          <p>WEDDING DETAILS</p>
+          <h2>Acara akan diadakan pada</h2>
+          <div class="tanggal">
+            <img src="assets/icon/calendar.svg" alt="location" />
+            <p>05 November 2023</p>
+          </div>
+          <div class="waktu">
+            <img src="assets/icon/clock.svg" alt="location" />
+            <p>10:00 WIB - Selesai</p>
+          </div>
+          <div class="lokasi">
+            <img src="assets/icon/map-pin.svg" alt="location" />
+            <p>Jalan Jawa Gg. Salak</p>
+          </div>
+        </div>
+        <div
+          class="kanan"
+          data-aos="fade-left"
+          data-aos-delay="90"
+          data-aos-duration="1000"
+        >
+          <form
+            action="https://script.google.com/macros/s/AKfycbz_xO_nXHys8ptykvb0cjawOzkiob6glKJfmMD7Vp49Stu6yE8b3FXB-lTpWa2imHM1/exec"
+            method="POST"
+            id="my-form"
+          >
+            <div>
+              <label for="nama">Nama</label>
+              <input
+                type="text"
+                name="nama"
+                placeholder="Ketikkan nama anda"
+                required
+              />
+            </div>
+            <div>
+              <label for="pesan">Pesan</label>
+              <input
+                type="text"
+                name="pesan"
+                placeholder="Ketikkan pesan anda"
+                required
+              />
+            </div>
+            <div>
+              <label for="kehadiran">Kehadiran</label>
+              <select name="kehadiran" id="kehadiran" required>
+                <option value="" disabled selected>-- Harap dipilih --</option>
+                <option value="hadir">Hadir</option>
+                <option value="tidak-hadir">Tidak Hadir</option>
+                <option value="masih-ragu">Masih Ragu</option>
+              </select>
+            </div>
+            <div class="tombol">
+              <button type="submit" name="submit">RSVP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="jam">
+      <div
+        class="cd"
+        data-aos="fade-down"
+        data-aos-delay="90"
+        data-aos-duration="1000"
+      >
+        Countdown acara
+      </div>
+      <div
+        class="container-jam"
+        data-aos="fade-up"
+        data-aos-delay="90"
+        data-aos-duration="1000"
+      >
+        <div>
+          <h1 id="countdown-hari"></h1>
+          <p>Hari</p>
+        </div>
+        <div>
+          <h1 id="countdown-jam"></h1>
+          <p>Jam</p>
+        </div>
+        <div>
+          <h1 id="countdown-menit"></h1>
+          <p>Menit</p>
+        </div>
+        <div>
+          <h1 id="countdown-detik"></h1>
+          <p>Detik</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+      <div class="map-location">
+        <div
+          class="button-map"
+          data-aos="fade-down"
+          data-aos-delay="90"
+          data-aos-duration="1000"
+        >
+          <img src="assets/icon/map.svg" alt="map" /><a
+            href="https://maps.app.goo.gl/ah2YqUQv2NjoC66H9"
+            target="_blank"
+            >Map location</a
+          >
+        </div>
+      </div>
+      <div class="container-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.1199437090552!2d99.052598!3d2.964292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031848b9816ea55%3A0x345df62d48622f91!2sJl.%20Jawa%20No.62%2C%20Bantan%2C%20Kec.%20Siantar%20Bar.%2C%20Kota%20Pematang%20Siantar%2C%20Sumatera%20Utara%2021111!5e0!3m2!1sid!2sid!4v1696860621277!5m2!1sid!2sid"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          data-aos="fade-up"
+          data-aos-delay="90"
+          data-aos-duration="1000"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="sub-footer">
+      <div class="container-subfooter">
+        <div class="navbar-foot">
+          <a href="#home">Home</a>
+          <a href="#aboutUs">About Us</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#weddingdetails">Wedding Details</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        Dibuat setulus hati oleh
+        <span
+          ><a href="https://instagram.com/ihsandly" target="_blank"
+            >@ID.</a
+          ></span
+        >
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
