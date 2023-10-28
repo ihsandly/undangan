@@ -94,6 +94,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 56px;
+  z-index: 999;
 }
 
 nav a {
