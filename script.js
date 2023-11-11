@@ -28,7 +28,7 @@ function playmusic() {
 toggleButton.addEventListener("click", playmusic);
 
 // Set tanggal berakhir
-var countDownDate = new Date("2023-11-05T00:00:00Z").getTime();
+var countDownDate = new Date("2023-12-16T00:00:00Z").getTime();
 
 // Update the countdown every 1 second
 var x = setInterval(function () {

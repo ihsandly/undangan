@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lora:wght@400;500;600;700&family=Parisienne&display=swap");
 
 :root {
   --serif: "Lora", serif;
   --sans-serif: "Inter", sans-serif;
+  --handscript: "Parisienne", cursive;
 }
 
 * {
@@ -87,6 +88,7 @@
 nav {
   font-family: var(--serif);
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   right: 0;
@@ -94,7 +96,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 56px;
-  z-index: 999;
 }
 
 nav a {
@@ -111,21 +112,93 @@ nav a:hover {
   transition: all ease-in-out 100ms;
 }
 
+.same {
+  background-image: url("/assets/img/hero/hero-2-second-third-fourth.png") !important;
+}
+
 .header {
-  height: 35vh;
-  background-image: url("/assets/img/hero-2.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: 28rem;
+  /* background-image: url("/assets/img/hero/hero-2-second-third-fourth.png"); */
   display: flex;
   align-items: center;
   justify-content: center;
   color: #a8a29e;
 }
 
-.aboutus {
+.introductions {
+  padding: 1.7rem 0;
+  /* background-image: url("/assets/img/hero/hero-2-second-third-fourth.png"); */
+}
+
+.basmalah {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.basmalah img {
+  width: 220px;
+}
+
+.ayat {
+  font-family: var(--sans-serif);
+  background-color: white;
+  padding: 20px 10px;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1b1110;
+  text-align: center;
+  margin: 0px 29rem;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.ayat span {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1b1110;
+}
+
+.intro-second {
   background-color: #fbf7f6;
+  padding-top: 3.4rem;
+}
+
+.container-intro-second {
+  margin: 0px 29rem;
+}
+
+.text {
+  font-family: var(--sans-serif);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.salam {
+  font-family: var(--handscript);
+  padding-bottom: 0.5rem;
+  font-size: 1.85rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.aboutus,
+.intro-second {
+  background-color: white;
+  /* background-color: #fbf7f6; */
+}
+
+.aboutus {
   padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.salam {
+  padding-top: 1.4rem;
 }
 
 .container-aboutus {
@@ -145,6 +218,25 @@ nav a:hover {
   border-radius: 30px;
 }
 
+.nama {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--serif);
+  background-color: white;
+}
+
+.pria span p {
+  font-weight: 500;
+}
+
+.dan {
+  font-family: var(--handscript);
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  margin-left: 15%;
+}
+
 .aboutus-kanan p {
   font-family: var(--sans-serif);
   margin-bottom: 10px;
@@ -160,7 +252,7 @@ nav a:hover {
 .satu,
 .dua,
 .tiga {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .container-header {
@@ -193,7 +285,8 @@ nav a:hover {
 
 .sub-header {
   padding: 6rem 6rem;
-  background-color: #fbf7f6;
+  /* background-color: #fbf7f6; */
+  background-color: white;
 }
 
 .container-subheader {
@@ -283,6 +376,7 @@ button:hover {
   font-family: var(--serif);
   background-color: #fbf7f6;
   padding-bottom: 6rem;
+  padding-top: 2.2rem;
 }
 
 .container-jam {
@@ -365,6 +459,7 @@ footer span a:hover {
 }
 
 iframe {
+  border-radius: 12px;
   width: 700px;
   margin-bottom: 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -421,6 +516,7 @@ iframe {
   flex-wrap: wrap;
   gap: 7px;
   row-gap: 7px;
+  padding-bottom: 4.2rem;
 }
 
 .galleries img:hover {
@@ -474,6 +570,7 @@ iframe {
 
   .aboutus {
     background-color: #fbf7f6;
+    /* background-color: white; */
     padding-top: 4rem;
   }
 
@@ -482,6 +579,7 @@ iframe {
     gap: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
 
@@ -572,6 +670,8 @@ iframe {
 
   iframe {
     max-width: 767px;
+    border-radius: 15px;
+    margin: 0px 12px 15px 12px;
   }
 
   * {
@@ -596,6 +696,13 @@ iframe {
     width: 328px;
     object-fit: cover;
     border-radius: 12px;
-    overflow: hidden;
+  }
+
+  .ayat {
+    margin: 0;
+  }
+
+  .container-intro-second {
+    margin: 0;
   }
 }
