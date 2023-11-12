@@ -823,4 +823,22 @@ iframe {
     font-size: 14px;
     margin: 0 20px;
   }
+
+  .image-details .image-clear:hover img {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+
+  .image-details .image-clear img {
+    filter: brightness(90%);
+  }
+
+  .image-details-landscape .image-clear-landscape:hover img {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+
+  .image-details-landscape .image-clear-landscape img {
+    filter: brightness(90%);
+  }
 }
