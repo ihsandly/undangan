@@ -824,6 +824,10 @@ iframe {
     margin: 0 20px;
   }
 
+  .galleries {
+    overflow: hidden;
+  }
+
   .image-details .image-clear:hover img {
     transform: scale(1);
     filter: brightness(100%);
