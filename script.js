@@ -87,3 +87,34 @@ window.addEventListener("load", function () {
     });
   });
 });
+
+// salin ke papan klip
+function myFunction1() {
+  const copyText = document.getElementById("myInput1");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+  const tooltip = document.getElementById("copied1");
+  tooltip.innerHTML = "Telah tersalin";
+}
+
+function outFunc1() {
+  const tooltip = document.getElementById("copied1");
+  tooltip.innerHTML = "Salin no rekening";
+}
+
+function myFunction2() {
+  const copyText = document.getElementById("myInput2");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+  const tooltip = document.getElementById("copied2");
+  tooltip.innerHTML = "Telah tersalin";
+}
+
+function outFunc2() {
+  const tooltip = document.getElementById("copied2");
+  tooltip.innerHTML = "Salin no rekening";
+}
