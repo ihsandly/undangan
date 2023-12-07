@@ -34,7 +34,7 @@
         </div>
         <div class="teks">
           <div class="kepada">
-            <p>Kepada Bapak/Ibu/Saudara/i</p>
+            <p>Kepada <span id="text">Bapak/Ibu/Saudara/i</span></p>
           </div>
           <div class="teks-undangan">
             <p>
@@ -67,9 +67,9 @@
           <h1 data-aos="fade-down" data-aos-delay="90" data-aos-duration="1400">
             Irfan & Yuni
           </h1>
-          <p data-aos="fade-down" data-aos-delay="70" data-aos-duration="1000">
+          <!-- <p data-aos="fade-down" data-aos-delay="70" data-aos-duration="1000">
             17 Desember 2023
-          </p>
+          </p> -->
         </div>
       </div>
 
@@ -93,7 +93,13 @@
         <div class="text">
           <p>
             Dengan memohon Rahmat dan Ridho Allah SWT, Kami bermaksud mengundang
-            Bapak/Ibu/Saudara/i untuk hadir dalam pernikahan kami
+            <span
+              style="font-weight: 600; text-transform: capitalize"
+              id="text-2"
+            >
+              Bapak/Ibu/Saudara/i</span
+            >
+            untuk hadir dalam pernikahan kami
           </p>
         </div>
       </div>
@@ -111,7 +117,12 @@
           />
         </div>
         <div class="aboutus-kanan">
-          <p data-aos="fade-down" data-aos-delay="70" data-aos-duration="1000">
+          <p
+            data-aos="fade-down"
+            data-aos-delay="70"
+            data-aos-duration="1000"
+            class="about-us-title"
+          >
             ABOUT US
           </p>
           <div
@@ -149,12 +160,13 @@
           >
             <h2>Perjalanan cinta</h2>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              numquam doloribus distinctio. Omnis eum ex minus corrupti at eos
-              aliquid dolorum, incidunt non. Dolor, vitae delectus? Nisi ipsa
-              fugiat ea, magni iusto libero harum aliquid. Molestiae facere
-              reiciendis nobis quos.
+            <p style="line-height: 1.2">
+              <span style="font-weight: 600">13 Mei 2016</span>, Pertemuan
+              pertama menjadi pembuka lembaran baru, kami saling bertukar nomor
+              telepon atau WhatsApp. Kami mulai berkomunikasi, terlibat dalam
+              percakapan yang penuh tanda tanya dan senyuman. Meski saat itu
+              hubungan belum terjalin, namun setiap kata-kata menjadi benih yang
+              tumbuh menjadi kisah yang lebih dalam.
             </p>
           </div>
 
@@ -166,12 +178,13 @@
           >
             <h2>Memantapkan pilihan</h2>
 
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Doloribus eos assumenda esse reiciendis veniam itaque atque ex?
-              Deserunt sit officia saepe cupiditate assumenda natus odit
-              explicabo. Architecto eius accusamus ipsam natus veniam debitis
-              saepe. Non!
+            <p style="line-height: 1.2">
+              <span style="font-weight: 600">9 Juli 2023</span>, Hari itu pun
+              tiba, dengan sikap hormat dan tulus, abang menyampaikan niat
+              baiknya untuk melanjutkan hubungan kami ke jenjang yang lebih
+              serius. Momen itu menjadi langkah awal dari komitmen yang lebih
+              mendalam antara kedua keluarga kami, serta permulaan dari
+              perjalanan hidup yang akan kami jalani bersama.
             </p>
           </div>
         </div>
@@ -334,6 +347,7 @@
     </div>
 
     <div class="sub-header" id="weddingdetails">
+      <p id="title-wedd">WEDDING DETAILS</p>
       <div class="container-subheader">
         <div
           class="kiri"
@@ -341,11 +355,30 @@
           data-aos-delay="90"
           data-aos-duration="1000"
         >
-          <p>WEDDING DETAILS</p>
-          <h2>Acara akan diadakan pada</h2>
+          <h2>Akad Nikah</h2>
           <div class="tanggal">
             <img src="assets/icon/calendar.svg" alt="location" />
-            <p>Sabtu, 17 Desember 2023</p>
+            <p>Selasa, 12 Desember 2023</p>
+          </div>
+          <div class="waktu">
+            <img src="assets/icon/clock.svg" alt="location" />
+            <p>09:00 WIB - Selesai</p>
+          </div>
+          <div class="lokasi">
+            <img src="assets/icon/map-pin.svg" alt="location" />
+            <p>Jalan Flores II</p>
+          </div>
+        </div>
+        <div
+          class="kiri"
+          data-aos="fade-right"
+          data-aos-delay="90"
+          data-aos-duration="1000"
+        >
+          <h2>Resepsi</h2>
+          <div class="tanggal">
+            <img src="assets/icon/calendar.svg" alt="location" />
+            <p>Rabu, 13 Desember 2023</p>
           </div>
           <div class="waktu">
             <img src="assets/icon/clock.svg" alt="location" />
@@ -353,7 +386,7 @@
           </div>
           <div class="lokasi">
             <img src="assets/icon/map-pin.svg" alt="location" />
-            <p>Jalan Sunda</p>
+            <p>Jalan Flores II</p>
           </div>
         </div>
         <div
@@ -395,7 +428,7 @@
               </select>
             </div>
             <div class="tombol">
-              <button type="submit" name="submit">Kirimkan Pesan</button>
+              <button type="submit" name="submit">RSVP</button>
             </div>
           </form>
         </div>
@@ -478,16 +511,16 @@
           data-aos-duration="1000"
         >
           <img src="assets/icon/map.svg" alt="map" /><a
-            href="https://maps.app.goo.gl/8rkAaXEj4yCRan8r8"
+            href="https://maps.app.goo.gl/vrpYFD8SnrF3T2466"
             target="_blank"
-            >Map location</a
+            >Map Location</a
           >
         </div>
       </div>
 
       <div class="container-map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4692.983253287954!2d99.05482672712816!3d2.962095121742647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwNTcnNDMuOCJOIDk5wrAwMycxNy45IkU!5e0!3m2!1sid!2sid!4v1698740593401!5m2!1sid!2sid"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.1198822415469!2d99.0556461765631!3d2.9643602756004395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwNTcnNTIuNSJOIDk5wrAwMycyMS4xIkU!5e0!3m2!1sid!2sid!4v1701933079109!5m2!1sid!2sid"
           height="450"
           style="border: 0"
           allowfullscreen=""
@@ -496,8 +529,7 @@
           data-aos="fade-up"
           data-aos-delay="90"
           data-aos-duration="1000"
-        >
-        </iframe>
+        ></iframe>
       </div>
     </div>
 
@@ -515,9 +547,9 @@
     <footer>
       <div>
         Dibuat setulus hati oleh
-        <span
-          ><a href="https://instagram.com/ihsandly" target="_blank"
-            >@ID.</a
+        <span>
+          <a href="https://instagram.com/ihsandly" target="_blank"
+            ><span><span style="color: red">❤</span> ID</span></a
           ></span
         >
       </div>

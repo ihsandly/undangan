@@ -13,6 +13,10 @@
   scroll-behavior: smooth;
 }
 
+.gradient-background {
+  background-color: #fbf7f6;
+}
+
 /* play music */
 .play-music img {
   position: fixed;
@@ -35,7 +39,7 @@
   width: 100vw;
   transform: translateY(0);
   transition: 300ms ease-in-out;
-  background-color: #e5e4df;
+  background-color: #fbf7f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +48,11 @@
 
 #intro.open {
   transform: translateY(-100vh);
+}
+
+.about-us-title {
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .components {
@@ -64,6 +73,8 @@
 
 .kepada {
   margin: 18px 0 12px 0;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .teks-undangan {
@@ -294,7 +305,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 6rem;
 }
 
@@ -494,7 +505,7 @@ iframe {
 /* gallery */
 #gallery {
   padding-top: 6rem;
-  background-color: fbf7f6;
+  background-color: #fbf7f6;
 }
 
 .gallery-title {
@@ -521,10 +532,10 @@ iframe {
 }
 
 .image-details {
-  border-radius: 12px;
   position: relative;
-  width: 400px;
+  border-radius: 12px;
   overflow: hidden;
+  width: 400px;
   height: 500px;
 }
 
@@ -576,6 +587,7 @@ iframe {
 
 .hadiah-details {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
@@ -644,6 +656,14 @@ iframe {
   opacity: 1;
 }
 
+#title-wedd {
+  font-family: var(--sans-serif);
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 767px) {
   .title {
     display: none;
@@ -677,7 +697,7 @@ iframe {
   }
 
   .aboutus {
-    background-color: #fbf7f6;
+    background-color: white;
     /* background-color: white; */
     padding-top: 4rem;
   }
@@ -784,6 +804,10 @@ iframe {
 
   * {
     overflow-x: hidden;
+  }
+
+  #title-wedd {
+    text-align: left;
   }
 
   .sub {

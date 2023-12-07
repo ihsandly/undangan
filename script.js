@@ -28,7 +28,7 @@ function playmusic() {
 toggleButton.addEventListener("click", playmusic);
 
 // Set tanggal berakhir
-var countDownDate = new Date("2023-12-16T00:00:00Z").getTime();
+var countDownDate = new Date("2023-12-12T00:00:00Z").getTime();
 
 // Update the countdown every 1 second
 var x = setInterval(function () {
@@ -62,10 +62,10 @@ const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", function () {
   // Jika posisi scroll lebih besar dari 100 piksel, ubah warna latar belakang navbar
   if (window.scrollY > 99) {
-    navbar.style.backgroundColor = "#fbf7f6";
+    navbar.classList.add("gradient-background");
     navbar.style.transition = "100ms"; // Ubah warna sesuai keinginan Anda
   } else {
-    navbar.style.backgroundColor = "transparent"; // Kembali ke warna awal
+    navbar.classList.remove("gradient-background");
   }
 });
 
@@ -118,3 +118,14 @@ function outFunc2() {
   const tooltip = document.getElementById("copied2");
   tooltip.innerHTML = "Salin no rekening";
 }
+
+// url
+const urlParams = new URLSearchParams(window.location.search);
+const nama = urlParams.get("n") || "";
+const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+
+const namaContainer = document.querySelector("#text");
+namaContainer.innerHTML = `${pronoun} ${nama}`;
+
+const namaContainer2 = document.querySelector("#text-2");
+namaContainer2.innerHTML = `${pronoun} ${nama}`;
