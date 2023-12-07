@@ -82,7 +82,7 @@ window.addEventListener("load", function () {
       Swal.fire({
         icon: "success",
         title: "Good!",
-        text: "Data berhasil dikirim",
+        text: "Kehadiran berhasil dikirim",
       });
     });
   });
